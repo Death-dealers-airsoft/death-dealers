@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Dealers Airsoft | Official Team Site</title>
+    <style>
+        :root {
+            --cobalt-blue: #2e5cb8; /* Matches your logo text */
+            --tactical-black: #0f0f0f;
+            --ghost-white: #f4f4f4;
+            --blood-red: #8b0000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--tactical-black);
+            color: var(--ghost-white);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Tactical background placeholder */
+            background-size: cover;
+            border-bottom: 4px solid var(--cobalt-blue);
+        }
+
+        .logo {
+            max-width: 250px;
+            filter: drop-shadow(0 0 10px rgba(46, 92, 184, 0.5));
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            border-left: 5px solid var(--cobalt-blue);
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .mission-box {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            font-style: italic;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #111;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            background-color: var(--cobalt-blue);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #000;
+            border: 1px solid var(--cobalt-blue);
+            color: white;
+        }
+
+        button {
+            background: var(--cobalt-blue);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: var(--blood-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Death Dealers Logo" class="logo">
+        <h1>DEATH DEALERS</h1>
+        <p>RISE FROM THE CHAOS. DELIVER THE STRIKE.</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="mission">
+            <h2>Mission Statement</h2>
+            <div class="mission-box">
+                "The Death Dealers are more than just an airsoft team; we are a disciplined unit forged in the heat of the skirmish. 
+                We adapt, overcome, and outlast our opposition, no matter the odds. We don't just play the game—we dictate the terms."
+            </div>
+        </section>
+
+        <section id="roster" style="margin-top: 50px;">
+            <h2>Active Duty Roster</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Callsign</th>
+                        <th>Role</th>
+                        <th>Primary Weapon</th>
+                        <th>Specialty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Phoenix-01</strong></td>
+                        <td>Team Lead</td>
+                        <td>MK18 Mod 1</td>
+                        <td>Tactical Command</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Viper</strong></td>
+                        <td>Pointman</td>
+                        <td>MP7 A1</td>
+                        <td>Room Clearing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ghost</strong></td>
+                        <td>Marksman</td>
+                        <td>SRS-A2</td>
+                        <td>Recon</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="recruitment" style="margin-top: 50px;">
+            <h2>Recruitment: Join the Unit</h2>
+            <div class="form-group">
+                <form action="#">
+                    <label>Callsign / Alias</label>
+                    <input type="text" placeholder="Enter your field name..." required>
+
+                    <label>Preferred Role</label>
+                    <select>
+                        <option>Rifleman</option>
+                        <option>Medic</option>
+                        <option>Sniper / Recon</option>
+                        <option>Heavy Support</option>
+                    </select>
+
+                    <label>Primary Loadout</label>
+                    <input type="text" placeholder="AEG, HPA, GBBR?" required>
+
+                    <label>Why the Death Dealers?</label>
+                    <textarea rows="4" placeholder="Prove your grit..."></textarea>
+
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 DEATH DEALERS AIRSOFT. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
