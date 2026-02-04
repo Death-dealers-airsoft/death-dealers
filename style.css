@@ -213,3 +213,14 @@ footer { text-align: center; padding: 30px; color: #444; }
     }
     .event-details { padding-left: 0; margin-bottom: 15px; }
 }
+
+/* Discord Button Animation */
+.discord-button img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px var(--cobalt));
+    cursor: pointer;
+}
+
+.discord-button img:active {
+    transform: scale(0.95);
+}
