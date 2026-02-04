@@ -26,18 +26,29 @@
     <div class="container" style="margin-top:50px;">
         <h2>Recruitment Application</h2>
         <div class="form-group">
-            <form>
-                <input type="text" placeholder="Callsign / Alias" required>
-                <input type="text" placeholder="Primary Loadout" required>
-                <select>
-                    <option>Rifleman</option>
-                    <option>Medic</option>
-                    <option>Sniper</option>
-                    <option>Support</option>
-                </select>
-                <textarea rows="5" placeholder="Why do you want to join the Death Dealers?"></textarea>
-                <button type="submit">Send Application</button>
-            </form>
+            <form action="https://formspree.io/f/mgolwwzz" method="POST">
+    <label>Callsign / Alias</label>
+    <input type="text" name="callsign" placeholder="Enter your field name..." required>
+
+    <label>Preferred Role</label>
+    <select name="role">
+        <option value="rifleman">Rifleman</option>
+        <option value="medic">Medic</option>
+        <option value="sniper">Sniper / Recon</option>
+        <option value="support">Heavy Support</option>
+    </select>
+
+    <label>Primary Loadout</label>
+    <input type="text" name="loadout" placeholder="AEG, HPA, GBBR?" required>
+
+    <label>Your Email</label>
+    <input type="email" name="email" placeholder="Your email address" required>
+
+    <label>Why the Death Dealers?</label>
+    <textarea name="message" rows="4" placeholder="Prove your grit..."></textarea>
+
+    <button type="submit">Submit Application</button>
+</form>
         </div>
     </div>
 <section id="discord-cta" style="text-align: center; margin: 40px 0;">
