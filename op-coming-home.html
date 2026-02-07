@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP: Coming Home | Death Dealers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .event-header { background: rgba(0,0,0,0.85); padding: 80px 20px; text-align: center; border-bottom: 2px solid var(--primary-red); }
+        .countdown-container { display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap; }
+        .count-box { background: rgba(204, 0, 0, 0.1); border: 1px solid var(--primary-red); padding: 20px; min-width: 100px; text-align: center; }
+        .count-num { display: block; font-family: var(--header-font); font-size: 2.5rem; color: white; }
+        .count-label { font-size: 0.7rem; color: var(--neon-green); letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">DEATH DEALERS</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="roster.html">ROSTER</a>
+                <a href="events.html">EVENTS</a>
+                <a href="op-coming-home.html" class="active">OP: COMING HOME</a>
+                <a href="media.html">MEDIA</a>
+                <a href="recruitment.html">RECRUITMENT</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="event-header">
+        <span class="card-id" style="color:var(--neon-green)">ANNUAL_FLAGSHIP_EVENT // 2026</span>
+        <h1 class="glitch-text">OP: COMING HOME</h1>
+        <div class="countdown-container">
+            <div class="count-box"><span class="count-num">142</span><span class="count-label">DAYS</span></div>
+            <div class="count-box"><span class="count-num">12</span><span class="count-label">HOURS</span></div>
+            <div class="count-box"><span class="count-num">45</span><span class="count-label">MINUTES</span></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intel-card">
+            <span class="card-id">MISSION_BRIEFING // CLASSIFIED</span>
+            <hr class="card-divider">
+            <p><strong>OP: Coming Home</strong> is the Death Dealers' premier annual Charity event for VOW. </p>
+        </section>
+
+        <div id="intel-grid">
+            <div class="intel-card">
+                <span class="card-id">INTEL // LOCATION</span>
+                <hr class="card-divider">
+                <h3>BLACK OPS AIRSOFT</h3>
+                <p>BRISTOL, WI, USA</p>
+                <p style="color: var(--neon-green); font-family: monospace;">TERRAIN: URBAN / WOODLAND MIX</p>
+            </div>
+            <div class="intel-card">
+                <span class="card-id">INTEL // LOGISTICS</span>
+                <hr class="card-divider">
+                <ul style="list-style:none; padding:0; line-height:2">
+                    <li><strong style="color:var(--primary-red)">[FPS]</strong> 400 MAX (.20g)</li>
+                    <li><strong style="color:var(--primary-red)">[KIT]</strong> </li>
+                    <li><strong style="color:var(--primary-red)">[COMMS]</strong> </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="intel-card" style="text-align:center; border: 2px solid var(--primary-red);">
+            <span class="card-id">ACTION // ENLISTMENT</span>
+            <hr class="card-divider">
+            <h2 style="font-family: var(--header-font)">SIGN UP FOR UPDATES</h2>
+            <p>APPLY FOR TEMPORARY ATTACHMENT STATUS BELOW.</p>
+            <a href="recruitment.html" class="btn-secondary">REGISTER FOR OP</a>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 DEATH DEALERS AIRSOFT</footer>
+</body>
+</html>

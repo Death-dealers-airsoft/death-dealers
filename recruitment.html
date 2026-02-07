@@ -3,59 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruitment | Death Dealers Airsoft</title>
+    <title>Death Dealers | Recruitment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        input, textarea { width: 100%; background: #000; border: 1px solid #333; color: white; padding: 15px; margin-bottom: 20px; font-family: var(--body-font); outline: none; }
+        input:focus, textarea:focus { border-color: var(--primary-red); }
+        label { display: block; color: var(--primary-red); font-family: var(--header-font); font-size: 0.8rem; margin-bottom: 5px; letter-spacing: 2px; }
+    </style>
 </head>
-
 <body>
-   <nav>
-    <div class="nav-container">
-        <a href="index.html">HOME</a>
-        <a href="roster.html">ROSTER</a>
-        <a href="events.html">EVENTS</a>
-        <a href="media.html">MEDIA</a>
-        <a href="recruitment.html">RECRUITMENT</a>
-    </div>
-</nav>
-<header>
-        <img src="logo.png" alt="Death Dealers Logo" class="logo">
-        <h1>DEATH DEALERS</h1>
-        <p class="tagline">RISE FROM THE CHAOS. DELIVER THE STRIKE.</p>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">DEATH DEALERS</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="roster.html">ROSTER</a>
+                <a href="events.html">EVENTS</a>
+                <a href="op-coming-home.html">OP: COMING HOME</a>
+                <a href="media.html">MEDIA</a>
+                <a href="recruitment.html" class="active">RECRUITMENT</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero small-hero">
+        <h1 class="glitch-text">ENLISTMENT</h1>
     </header>
 
-    <div class="container" style="margin-top:50px;">
-        <h2>Recruitment Application</h2>
-        <div class="form-group">
-            <form action="https://formspree.io/f/xqedznqr" method="POST">
-    <label>Callsign / Alias</label>
-    <input type="text" name="callsign" placeholder="Enter your field name..." required>
-
-    <label>Preferred Role</label>
-    <select name="role">
-        <option value="rifleman">Rifleman</option>
-        <option value="medic">Medic</option>
-        <option value="sniper">Sniper / Recon</option>
-        <option value="support">Heavy Support</option>
-    </select>
-
-    <label>Primary Loadout</label>
-    <input type="text" name="loadout" placeholder="AEG, HPA, GBBR?" required>
-
-    <label>Your Email</label>
-    <input type="email" name="email" placeholder="Your email address" required>
-
-    <label>Why the Death Dealers?</label>
-    <textarea name="message" rows="4" placeholder="Prove your grit..."></textarea>
-
-    <button type="submit">Submit Application</button>
-</form>
+    <main class="container">
+        <div class="intel-card">
+            <span class="card-id">APPLICATION // SECURE</span>
+            <hr class="card-divider">
+            <form>
+                <label>CALLSIGN</label><input type="text" placeholder="GHOST_01" required>
+                <label>KIT DETAILS</label><textarea rows="4" placeholder="DESCRIBE YOUR GEAR..."></textarea>
+                <label>COMMUNICATION</label><input type="text" placeholder="DISCORD OR EMAIL" required>
+                <button type="submit" class="btn-secondary" style="width:100%;">TRANSMIT</button>
+            </form>
         </div>
-    </div>
-<section id="discord-cta" style="text-align: center; margin: 40px 0;">
-    <a href="https://discord.gg/uG4bQFzgVF" target="_blank" class="discord-button">
-        <img src="discord-btn.png" alt="Join the Discord Comm Center" style="max-width: 300px; border-radius: 10px; transition: 0.3s;">
-    </a>
-</section>
+    </main>
 
     <footer>&copy; 2026 DEATH DEALERS AIRSOFT</footer>
 </body>

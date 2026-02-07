@@ -3,59 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Death Dealers Airsoft | Official Team Site</title>
+    <title>Death Dealers | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Manually set to 500px as requested */
+        .hero-logo {
+            width: 500px; 
+            max-width: 90%; /* Prevents logo from breaking on phone screens */
+            height: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4));
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-overlay {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Centered Footer Styling */
+        .site-footer {
+            width: 100%;
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-top: 1px solid #111;
+            margin-top: 50px;
+            background: #000;
+        }
+
+        .site-footer p {
+            color: #555;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
-    <nav>
+    <nav class="main-nav">
         <div class="nav-container">
-            <a href="index.html" class="active">HOME</a>
-            <a href="roster.html">ROSTER</a>
-            <a href="events.html">EVENTS</a>
-            <a href="media.html">MEDIA</a>
-            <a href="recruitment.html">RECRUITMENT</a>
+            <div class="nav-brand">DEATH DEALERS</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">HOME</a>
+                <a href="roster.html">ROSTER</a>
+                <a href="events.html">EVENTS</a>
+                <a href="op-coming-home.html">OP: COMING HOME</a>
+                <a href="media.html">MEDIA</a>
+                <a href="recruitment.html">RECRUITMENT</a>
+            </div>
         </div>
     </nav>
 
-    <header>
-        <img src="logo.png" alt="Death Dealers Logo" class="logo">
-        <h1>DEATH DEALERS</h1>
-        <p class="tagline">RISE FROM THE CHAOS. DELIVER THE STRIKE.</p>
+    <header class="hero">
+        <div class="hero-overlay">
+            <img src="logo.png" alt="DEATH DEALERS LOGO" class="hero-logo">
+            <h1 class="glitch-text" style="font-size: 4rem;">DEATH DEALERS</h1>
+            <p class="tagline">RISE FROM THE CHAOS. DELIVER THE STRIKE.</p>
+        </div>
     </header>
 
-    <div class="container">
-        
-        <section id="mission">
-            <h2>Mission Statement</h2>
-            <div class="mission-box">
-                <p>"The Death Dealers are more than just an airsoft team; we are a disciplined unit forged in the heat of the skirmish. 
-                Our mission is to foster a welcoming and inclusive community for airsoft enthusiasts of all skill levels. We prioritize sportsmanship, safety, and camaraderie, 
-                ensuring that every member has a blast while contributing to the positive growth of the sport"</p>
-            </div>
+    <main class="container">
+        <section class="intel-card">
+            <span class="card-id">UNIT_MISSION // DATA</span>
+            <hr class="card-divider">
+            <p>"The Death Dealers are more than just an airsoft team; we are a disciplined unit forged in the heat of the skirmish. Our mission is to foster a welcoming and inclusive community for airsoft enthusiasts of all skill levels. We prioritize sportsmanship, safety, and camaraderie, ensuring that every member has a blast while contributing to the positive growth of the sport"</p>
         </section>
-
-        <section id="intel-grid" style="margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            
-            <div class="form-group" style="text-align: center;">
-                <h3>Next Operation</h3>
-                <p style="color: var(--cobalt); font-weight: bold; font-size: 1.2rem;">OPERATION: LandEaters</p>
-                <p>February 28th | Black Ops Airsoft</p>
-                <a href="events.html" style="color: white; text-decoration: underline;">View Full Calendar</a>
+<div class="intel-card discord-card">
+                <span class="card-id" style="color: #5865F2;">COMMS_LINK // LIVE</span>
+                <hr class="card-divider" style="border-color: #5865F2;">
+                <h3 style="font-family: 'Oswald';">JOIN THE DISCORD</h3>
+                <p>Connect with the squad, coordinate for upcoming ops, and get real-time intel.</p>
+                <a href="https://discord.gg/wp7V56W9Jm" class="discord-btn" target="_blank">JOIN SERVER</a>
             </div>
 
-            <div class="form-group" style="text-align: center;">
-                <h3>Unit Status</h3></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <div class="intel-card">
+                <span class="card-id">ANNUAL_EVENT // INTEL</span>
+                <hr class="card-divider">
+                <h3 style="font-family: 'Oswald';">OP: COMING HOME</h3>
+                <p>DETAILS: TBD.</p>
+                <a href="op-coming-home.html" style="color: #ff0000; text-decoration: none; font-size: 0.8rem; font-weight: bold;">[ MISSION INTEL ]</a>
+            </div>
+            <div class="intel-card">
+                <span class="card-id">SQUAD_DATA // STATS</span>
+                <hr class="card-divider">
+                <p>OPERATORS: 14 ACTIVE<br>STATUS: DEPLOYED<br>AO: MIDWEST SECTOR</p>
+                <a href="roster.html" style="color: #ff0000; text-decoration: none; font-size: 0.8rem; font-weight: bold;">[ VIEW SQUAD ]</a>
+            </div>
+        </div>
+    </main>
 
-<section id="discord-cta" style="text-align: center; margin: 40px 0;">
-    <a href="https://discord.gg/uG4bQFzgVF" target="_blank" class="discord-button">
-        <img src="discord-btn.png" alt="Join the Discord Comm Center" style="max-width: 300px; border-radius: 10px; transition: 0.3s;">
-    </a>
-</section>
+    <footer class="site-footer">
+        <p>&copy; 2026 DEATH DEALERS AIRSOFT</p>
+    </footer>
 
-
-
-
-    <footer>&copy; 2026 DEATH DEALERS AIRSOFT</footer>
 </body>
 </html>

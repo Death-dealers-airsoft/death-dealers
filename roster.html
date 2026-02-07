@@ -3,78 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roster | Death Dealers Airsoft</title>
+    <title>Personnel Roster | Death Dealers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* This ensures the roster actually shows up as a grid and doesn't break */
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+            width: 100%;
+        }
+        .operator-card {
+            background: #111;
+            border: 1px solid #333;
+            padding: 20px;
+            border-left: 3px solid #ff0000;
+        }
+        .card-id { color: #ff0000; font-family: monospace; font-size: 0.8rem; }
+        .op-name { display: block; color: #888; font-size: 0.8rem; text-transform: uppercase; margin-top: 10px; }
+        .op-callsign { display: block; font-family: 'Oswald', sans-serif; font-size: 1.8rem; color: #fff; line-height: 1.2; }
+        .card-divider { border: 0; border-top: 1px solid #333; margin: 10px 0; }
+    </style>
 </head>
 <body>
-   <nav>
-    <div class="nav-container">
-        <a href="index.html">HOME</a>
-        <a href="roster.html">ROSTER</a>
-        <a href="events.html">EVENTS</a>
-        <a href="media.html">MEDIA</a>
-        <a href="recruitment.html">RECRUITMENT</a>
-    </div>
-</nav>
-<header>
-        <img src="logo.png" alt="Death Dealers Logo" class="logo">
-        <h1>DEATH DEALERS</h1>
-        <p class="tagline">RISE FROM THE CHAOS. DELIVER THE STRIKE.</p>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">DEATH DEALERS</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="roster.html" class="active">ROSTER</a>
+                <a href="events.html">EVENTS</a>
+                <a href="op-coming-home.html">OP: COMING HOME</a>
+                <a href="media.html">MEDIA</a>
+                <a href="recruitment.html">RECRUITMENT</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero small-hero">
+        <div class="hero-overlay">
+            <h1 class="glitch-text">PERSONNEL_FILE</h1>
+        </div>
     </header>
 
-    <div class="container" style="margin-top:50px;">
-    <h2 style="text-align: center;">Active Duty Roster</h2>
-    <table style="margin: 0 auto; width: 60%; border-collapse: collapse;">
-        <thead>
-            <tr>
-                <th style="text-align: center; padding: 10px; border-bottom: 2px solid #fff;">Name</th>
-                <th style="text-align: center; padding: 10px; border-bottom: 2px solid #fff;">Callsign</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Steve</strong></td>
-                <td style="text-align: center; padding: 10px;">Dealer White 4</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Tom</strong></td>
-                <td style="text-align: center; padding: 10px;">Squirrel</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Harley</strong></td>
-                <td style="text-align: center; padding: 10px;">Ironside</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Nick</strong></td>
-                <td style="text-align: center; padding: 10px;">Polaris</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Jonathan</strong></td>
-                <td style="text-align: center; padding: 10px;">Anubis</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Isaiah</strong></td>
-                <td style="text-align: center; padding: 10px;">Mayhem</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Stephen</strong></td>
-                <td style="text-align: center; padding: 10px;">Dealer White 3</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Mason</strong></td>
-                <td style="text-align: center; padding: 10px;">Rattlesnake</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Liam</strong></td>
-                <td style="text-align: center; padding: 10px;">Joker</td>
-            </tr> <tr>
-                <td style="text-align: center; padding: 10px;"><strong>Cole</strong></td>
-                <td style="text-align: center; padding: 10px;">Jester</td>
-            </tr> </tbody>
+    <main class="container">
+        <div class="roster-grid">
+            <div class="operator-card"><span class="card-id">ID//01</span><hr class="card-divider"><span class="op-name">STEVE</span><span class="op-callsign">DEALER WHITE 4</span></div>
+            <div class="operator-card"><span class="card-id">ID//02</span><hr class="card-divider"><span class="op-name">TOM</span><span class="op-callsign">SQUIRREL</span></div>
+            <div class="operator-card"><span class="card-id">ID//03</span><hr class="card-divider"><span class="op-name">HARLEY</span><span class="op-callsign">IRONSIDE</span></div>
+            <div class="operator-card"><span class="card-id">ID//04</span><hr class="card-divider"><span class="op-name">NICK</span><span class="op-callsign">POLARIS</span></div>
+            <div class="operator-card"><span class="card-id">ID//05</span><hr class="card-divider"><span class="op-name">JONATHAN</span><span class="op-callsign">ANUBIS</span></div>
+            
+            <div class="operator-card"><span class="card-id">ID//06</span><hr class="card-divider"><span class="op-name">ISAIAH</span><span class="op-callsign">MAYHEM</span></div>
+            <div class="operator-card"><span class="card-id">ID//07</span><hr class="card-divider"><span class="op-name">STEPHEN</span><span class="op-callsign">DEALER WHITE 3</span></div>
+            <div class="operator-card"><span class="card-id">ID//08</span><hr class="card-divider"><span class="op-name">MASON</span><span class="op-callsign">RATTLESNAKE</span></div>
+            <div class="operator-card"><span class="card-id">ID//09</span><hr class="card-divider"><span class="op-name">LIAM</span><span class="op-callsign">JOKER</span></div>
+            <div class="operator-card"><span class="card-id">ID//10</span><hr class="card-divider"><span class="op-name">COLE</span><span class="op-callsign">JESTER</span></div>
 
-    </table>
-    </div>
-<section id="discord-cta" style="text-align: center; margin: 40px 0;">
-    <a href="https://discord.gg/uG4bQFzgVF" target="_blank" class="discord-button">
-        <img src="discord-btn.png" alt="Join the Discord Comm Center" style="max-width: 300px; border-radius: 10px; transition: 0.3s;">
-    </a>
-</section>
+            <div class="operator-card"><span class="card-id">ID//11</span><hr class="card-divider"><span class="op-name">WILL</span><span class="op-callsign">REAPER</span></div>
+            <div class="operator-card"><span class="card-id">ID//12</span><hr class="card-divider"><span class="op-name">DAN</span><span class="op-callsign">BIGGY</span></div>
+            <div class="operator-card"><span class="card-id">ID//13</span><hr class="card-divider"><span class="op-name">JENNIFER</span><span class="op-callsign">BOSS MAMA</span></div>
+            <div class="operator-card"><span class="card-id">ID//14</span><hr class="card-divider"><span class="op-name">JOHN</span><span class="op-callsign">BIG JOHN</span></div>
+        </div>
+    </main>
 
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 DEATH DEALERS AIRSOFT // EST. 2020</p>
+        </div>
+    </footer>
 
-
-
-    <footer>&copy; 2026 DEATH DEALERS AIRSOFT</footer>
 </body>
 </html>
