@@ -35,12 +35,31 @@
         <div class="intel-card">
             <span class="card-id">APPLICATION // SECURE</span>
             <hr class="card-divider">
-            <form>
-                <label>CALLSIGN</label><input type="text" placeholder="GHOST_01" required>
-                <label>KIT DETAILS</label><textarea rows="4" placeholder="DESCRIBE YOUR GEAR..."></textarea>
-                <label>COMMUNICATION</label><input type="text" placeholder="DISCORD OR EMAIL" required>
-                <button type="submit" class="btn-secondary" style="width:100%;">TRANSMIT</button>
-            </form>
+            <section class="intel-card" style="text-align:center; border: 2px solid var(--primary-red); margin-top: 40px;">
+    <span class="card-id">ACTION // ENLISTMENT</span>
+    <hr class="card-divider">
+    <h2 style="font-family: var(--header-font)">BRING OUR HEROES HOME</h2>
+    <p>JOIN THE DEATH DEALERS IN THE FIGHT AGAINST PTSD.</p>
+
+    <form action="https://formspree.io/f/xqedznqr" method="POST" style="margin-top: 20px;">
+        
+        <div style="margin-bottom: 15px;">
+            <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" required 
+                style="background: rgba(0,0,0,0.5); border: 1px solid var(--primary-red); color: white; padding: 10px; width: 80%; max-width: 300px; font-family: 'Rajdhani', sans-serif;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <input type="text" name="callsign" placeholder="CALLSIGN / NAME" required 
+                style="background: rgba(0,0,0,0.5); border: 1px solid var(--primary-red); color: white; padding: 10px; width: 80%; max-width: 300px; font-family: 'Rajdhani', sans-serif;">
+        </div>
+
+        <button type="submit" class="btn-secondary" 
+            style="background: var(--primary-red); color: white; padding: 15px 30px; text-decoration: none; display: inline-block; border: none; cursor: pointer; font-family: 'Oswald', sans-serif; text-transform: uppercase;">
+            TRANSMIT ENLISTMENT
+        </button>
+        
+    </form>
+    </section>
         </div>
     </main>
 
